@@ -35,9 +35,9 @@ public class TodoController {
         return todoService.getAllTodos();
     }
 
-    @RequestMapping("/todos/{id}")
-    public String getOneTodo(@PathVariable Integer id, Model model){
-        Todo todo = todoService.getOneTodo(id);
+    @RequestMapping("/todos/1")
+    public String getOneTodo(Model model){
+        Todo todo = todoService.getOneTodo(1L);
         model.addAttribute("todo", todo);
         return "todo";
     }

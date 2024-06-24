@@ -14,19 +14,19 @@ public class TodoService {
         todos = new ArrayList<>();
 
         Todo todo1 = new Todo();
-        todo1.setId(1);
+        todo1.setId(1L);
         todo1.setName("todo 1 ");
         todo1.setDescription("Description todo 1");
         todo1.setDone(false);
 
         Todo todo2 = new Todo();
-        todo2.setId(2);
+        todo2.setId(2L);
         todo2.setName("Todo 2");
         todo2.setDescription("Description todo 2");
         todo2.setDone(false);
 
         Todo todo3 = new Todo();
-        todo3.setId(3);
+        todo3.setId(3L);
         todo3.setName("Todo 3");
         todo3.setDescription("Description todo 3");
         todo3.setDone(true);
@@ -40,8 +40,8 @@ public class TodoService {
         return todos;
     }
 
-    public Todo getOneTodo(int id) {
-        return todos.get(id);
+    public Todo getOneTodo(Long id) {
+        return todos.get(1);
     }
 
 }
